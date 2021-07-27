@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .tablink.active {
+        @apply bg-white text-bluegray-900 cursor-default hover:bg-white;
+    }
+
+    input, textarea {
+        @apply border border-bluegray-300 rounded-lg w-full px-4 py-2 mt-2 focus:outline-none focus:ring focus:ring-bluegray-200 text-bluegray-600;
+    }
+}

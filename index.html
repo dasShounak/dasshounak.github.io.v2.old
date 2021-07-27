@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/0a41cee954.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/build.css" />
+        <title>Shounak Das | Front-end Developer</title>
+    </head>
+
+    <body class="min-h-screen bg-gray-200 p-2 md:p-4 lg:p-8 text-bluegray-900">
+        <div id="card" class="bg-white h-full rounded-3xl shadow-lg relative overflow-hidden grid grid-cols-1 md:grid-cols-layout">
+            <section id="section-left">
+                <aside id="left-pane" class="bg-bluegray-900 w-full h-full flex flex-col items-center space-y-10 pt-10 md:pb-10">
+                    <div id="profile-pic" class="h-44 w-44 rounded-full overflow-hidden shadow-lg mt-20 md:mt-0">
+                        <img src="img/profile.jpg" alt="Shounak Das" class="object-cover object-top w-full h-full" />
+                    </div>
+                    <!-- #profile-pic -->
+
+                    <div id="profession-tag" class="border border-white opacity-80 px-4 py-1 rounded-full">
+                        <p class="text-white font-extralight text-xs tracking-wider">Front-end Developer</p>
+                    </div>
+                    <!-- #profession-tag -->
+
+                    <div id="social-links" class="text-brand">
+                        <a href="#" class="px-2 py-1 rounded-full hover:bg-white hover:bg-opacity-10 transition active:bg-opacity-20"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="px-2 py-1 rounded-full hover:bg-white hover:bg-opacity-10 transition active:bg-opacity-20"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="px-2 py-1 rounded-full hover:bg-white hover:bg-opacity-10 transition active:bg-opacity-20"><i class="fab fa-github"></i></a>
+                    </div>
+                    <!-- #social-links -->
+
+                    <div id="location-email-group" class="space-y-2 flex flex-col items-center">
+                        <div id="location">
+                            <p class="text-white opacity-80 font-light text-sm"><i class="fas fa-map-marker-alt"></i> Kolkata, India</p>
+                        </div>
+
+                        <div id="email">
+                            <p class="text-white opacity-80 font-light text-sm"><i class="fas fa-envelope"></i> shounakdas19@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- #location-email-group -->
+
+                    <nav id="tabmenu" class="hidden md:block w-full overflow-hidden text-brand font-light text-lg text-center">
+                        <div class="ml-10"><button onclick="openTab(event, 'about')" class="tablink active block w-full py-3 rounded-tl-full rounded-bl-full pr-10 hover:bg-white hover:bg-opacity-10 transition">About</button></div>
+                        <div class="ml-10"><button onclick="openTab(event, 'projects')" class="tablink block w-full py-3 rounded-tl-full rounded-bl-full pr-10 hover:bg-white hover:bg-opacity-10 transition">Projects</button></div>
+                        <div class="ml-10"><button onclick="openTab(event, 'contact')" class="tablink block w-full py-3 rounded-tl-full rounded-bl-full pr-10 hover:bg-white hover:bg-opacity-10 transition">Contact</button></div>
+                    </nav>
+
+                    <!-- Mobile Nav -->
+                    <nav id="tabmenu" class="w-full flex md:hidden justify-evenly text-brand font-light text-center">
+                        <button onclick="openTab(event, 'about')" class="tablink active block w-full py-3 transition">About</button>
+                        <button onclick="openTab(event, 'projects')" class="tablink block w-full py-3 transition">Projects</button>
+                        <button onclick="openTab(event, 'contact')" class="tablink block w-full py-3 transition">Contact</button>
+                    </nav>
+                </aside>
+            </section>
+            <!-- #section-left -->
+
+            <section id="section-right">
+                <header id="header" class="flex items-center justify-between px-4 py-2 sm:px-6 sm:py-4 border-b-2 border-gray-200 fixed top-0 left-0 md:static w-full bg-white">
+                    <div id="logo" class="flex space-x-2 items-center">
+                        <img src="img/logo-color.svg" alt="Logomark" class="h-10 w-10" />
+                        <h1 class="text-xl sm:text-2xl md:text-3xl font-semibold">Shounak Das</h1>
+                    </div>
+                    <!-- #logo -->
+
+                    <div id="blog-link">
+                        <a href="" class="bg-brand px-4 py-2 rounded-lg font-medium hover:bg-yellow-200 transition focus:ring focus:ring-brand focus:ring-offset-2">Blog</a>
+                    </div>
+                    <!-- #blog-link -->
+                </header>
+
+                <main id="content-area">
+                    <section id="about" class="tabcontent p-4 pb-8 lg:p-8 space-y-16">
+                        <section id="about-me">
+                            <h1 class="text-xl font-medium mb-2">About Me</h1>
+                            <p class="text-bluegray-600 lg:pr-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est error numquam voluptatibus dolor. Maxime voluptate dolor explicabo dolore repellendus. Sed perferendis aliquam, tenetur error fugit maiores dolorem, eum laborum reprehenderit, vel quod quis rerum. Sit quae totam quis ea sequi.</p>
+                        </section>
+                        <!-- #about-me -->
+
+                        <div id="skills-row" class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                            <section id="skills" class="lg:col-span-2">
+                                <h1 class="text-xl font-medium mb-6">Tech Stack</h1>
+                                <div id="icons" class="grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7 gap-4 w-full px-4">
+                                    <img src="img/tech-stack/html-5.svg" alt="HTML5" class="w-12 h-12" />
+                                    <img src="img/tech-stack/css-3.svg" alt="CSS3" class="w-12 h-12" />
+                                    <img src="img/tech-stack/sass.svg" alt="SCSS" class="w-12 h-12" />
+                                    <img src="img/tech-stack/tailwindcss-icon.svg" alt="Tailwind CSS" class="w-12 h-12" />
+                                    <img src="img/tech-stack/bulma.svg" alt="Bulma" class="w-12 h-12" />
+                                    <img src="img/tech-stack/bootstrap.svg" alt="Bootstrap" class="w-12 h-12" />
+                                    <img src="img/tech-stack/javascript.svg" alt="JavaScript" class="w-12 h-12" />
+                                </div>
+                            </section>
+                            <!-- #skills -->
+
+                            <section id="learning">
+                                <h1 class="text-xl font-medium mb-6">Learning</h1>
+                                <div id="icons" class="flex flex-col items-start justify-between px-4">
+                                    <img src="img/tech-stack/jquery.svg" alt="jQuery" class="w-24 h-auto" />
+                                </div>
+                            </section>
+                            <!-- #learning -->
+                        </div>
+                        <!-- #skills-row -->
+
+                        <section id="education">
+                            <h1 class="text-xl font-medium mb-2">Education</h1>
+                            <ul class="text-bluegray-600 list-disc list-outside ml-6">
+                                <li>
+                                    <!--todo: B.Tech Computer Science Engineering <br />
+                                    SRM Institute of Science & Technology (KTR), Chennai <br />
+                                    Year of graduation - 2025 -->
+                                    B.Tech Computer Science Engineering <br />
+                                    Year of graduation - 2025
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- #education -->
+                    </section>
+                    <!-- #about -->
+
+                    <section id="projects" class="tabcontent hidden">
+                        <div id="projects-grid-wrapper" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 p-2 md:p-4 lg:p-8">
+                            <div id="projects-grid-card" class="bg-white border rounded-3xl shadow-md p-5">
+                                <h1 id="project-title" class="text-xl font-medium mb-4">Project Title</h1>
+                                <div id="project-image-container" class="h-32 w-full mb-2 bg-gray-400"></div>
+                                <p id="project-description" class="text-sm text-bluegray-600 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto porro hic fugiat vitae consectetur atque labore distinctio alias architecto commodi.</p>
+                                <button id="project-link-btn" class="p-1 w-full bg-bluegray-900 text-brand rounded-full hover:bg-brand hover:text-bluegray-900 transition"><a href="">Visit</a></button>
+                            </div>
+                            <!-- #projects-grid-card -->
+                        </div>
+                        <!-- #projects-grid-wrapper -->
+                    </section>
+                    <!-- #projects -->
+
+                    <section id="contact" class="tabcontent hidden p-4 lg:p-8">
+                        <h1 id="contact-header" class="text-xl font-medium">Thanks for taking the time to reach out!</h1>
+                        <div id="contact-wrapper" class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <div id="contact-illustration" class="order-2 lg:order-1">
+                                <img src="img/mail.svg" alt="Illustration" class="max-w-md mx-auto" />
+                            </div>
+                            <!-- #contact-illustration -->
+
+                            <div id="contact-form-wrapper">
+                                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col items-center space-y-6 max-w-xs mx-auto">
+                                    <!-- Web3Forms Access Key -->
+                                    <input type="hidden" name="apikey" value="b9fab9e8-f063-4f12-a254-23f5e561be4b" />
+
+                                    <!-- Default Subject -->
+                                    <input type="hidden" name="subject" value="New Submission from Your Website" />
+
+                                    <!-- Submission Redirect -->
+                                    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+
+                                    <!-- Prevent SPAM submission -->
+                                    <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+                                    <!-- Name -->
+                                    <div id="name-group">
+                                        <label for="name">Name</label><br />
+                                        <input type="text" name="First Name" id="name" placeholder="John Doe" required />
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div id="email-group">
+                                        <label for="email">Email</label><br />
+                                        <input type="email" name="Email" id="email" placeholder="you@company.com" required />
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div id="message-group">
+                                        <label for="message">Your message</label><br />
+                                        <textarea name="Message" id="message" placeholder="How can I help you?" required></textarea>
+                                    </div>
+
+                                    <!-- Buttons -->
+                                    <div id="form-buttons" class="flex w-full space-x-3">
+                                        <button type="submit" class="bg-brand w-full p-2 rounded-lg transition hover:bg-yellow-200">Send</button>
+                                        <button type="reset" class="bg-transparent text-bluegray-600 border border-bluegray-300 w-full p-2 rounded-lg transition hover:bg-bluegray-200">Reset</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- #contact-form-wrapper -->
+                        </div>
+                        <!-- #contact-wrapper -->
+                    </section>
+                    <!-- contact -->
+                </main>
+            </section>
+            <!-- #section-right -->
+        </div>
+        <!-- #card -->
+
+        <script src="script.js"></script>
+    </body>
+</html>
