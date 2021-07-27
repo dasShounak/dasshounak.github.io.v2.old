@@ -8,17 +8,14 @@ module.exports = {
         fontFamily: {
             sans: ["Poppins", "sans-serif"],
         },
-        colors: {
-            transparent: "transparent",
-            brand: "#FFCD05",
-            bluegray: colors.blueGray,
-            yellow: colors.yellow,
-            white: colors.white,
-            gray: colors.gray,
-        },
         extend: {
             gridTemplateColumns: {
                 layout: "minmax(auto, 288px) 1fr",
+            },
+            colors: {
+                transparent: "transparent",
+                brand: "#FFCD05",
+                bluegray: colors.blueGray,
             },
         },
     },
