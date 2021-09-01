@@ -14,7 +14,7 @@ module.exports = {
             },
             colors: {
                 transparent: "transparent",
-                brand: "#FFCD05",
+                brand: "#FFE747",
                 bluegray: colors.blueGray,
             },
         },

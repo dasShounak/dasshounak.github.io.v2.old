@@ -13,8 +13,9 @@
         <title>Shounak Das | Front-end Developer</title>
     </head>
 
-    <body class="min-h-screen bg-gray-200 p-2 md:p-4 lg:p-8 text-bluegray-900">
-        <div id="card" class="bg-white h-full rounded-3xl shadow-lg relative overflow-hidden grid grid-cols-1 md:grid-cols-layout">
+    <body class="min-h-screen bg-gray-200 md:p-4 lg:p-8 text-bluegray-800">
+        <div id="card" class="bg-white h-full md:rounded-3xl shadow-lg relative overflow-hidden grid grid-cols-1 md:grid-cols-layout">
+            <!-- * LEFT PANE -->
             <section id="section-left">
                 <aside id="left-pane" class="bg-bluegray-900 w-full h-full flex flex-col items-center space-y-10 pt-10 md:pb-10">
                     <div id="profile-pic" class="h-44 w-44 rounded-full overflow-hidden shadow-lg mt-20 md:mt-0">
@@ -28,9 +29,9 @@
                     <!-- #profession-tag -->
 
                     <div id="social-links" class="text-brand">
-                        <a href="#" class="px-2 py-1 rounded-full hover:bg-white hover:bg-opacity-10 transition active:bg-opacity-20"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="px-2 py-1 rounded-full hover:bg-white hover:bg-opacity-10 transition active:bg-opacity-20"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="px-2 py-1 rounded-full hover:bg-white hover:bg-opacity-10 transition active:bg-opacity-20"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/theShounakDas" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded-full hover:bg-white hover:bg-opacity-10 transition active:bg-opacity-20"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/dasshounak/" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded-full hover:bg-white hover:bg-opacity-10 transition active:bg-opacity-20"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/dasShounak/" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded-full hover:bg-white hover:bg-opacity-10 transition active:bg-opacity-20"><i class="fab fa-github"></i></a>
                     </div>
                     <!-- #social-links -->
 
@@ -76,35 +77,33 @@
                 </header>
 
                 <main id="content-area">
+                    <!-- * ABOUT -->
                     <section id="about" class="tabcontent p-4 pb-8 lg:p-8 space-y-16">
                         <section id="about-me">
                             <h1 class="text-xl font-medium mb-2">About Me</h1>
-                            <p class="text-bluegray-600 lg:pr-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est error numquam voluptatibus dolor. Maxime voluptate dolor explicabo dolore repellendus. Sed perferendis aliquam, tenetur error fugit maiores dolorem, eum laborum reprehenderit, vel quod quis rerum. Sit quae totam quis ea sequi.</p>
+                            <p class="text-bluegray-600 lg:pr-6 leading-relaxed">Hello! My name is Shounak. I grew up in Kolkata, now studying Computer Science Engineering in Chennai. I wrote my first "Hello World" program when I was 12. But it's only been a couple of years since I took it seriously. In the era of digitalization, having a website for you or your business is necessary, and I will help you get one made. Apart from coding, I love spending time outdoors capturing photos of birds.</p>
                         </section>
                         <!-- #about-me -->
 
-                        <div id="skills-row" class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                            <section id="skills" class="lg:col-span-2">
+                        <div id="skills-row" class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            <section id="skills">
                                 <h1 class="text-xl font-medium mb-6">Tech Stack</h1>
-                                <div id="icons" class="grid grid-cols-5 sm:grid-cols-6 lg:grid-cols-7 gap-4 w-full px-4">
-                                    <img src="img/tech-stack/html-5.svg" alt="HTML5" class="w-12 h-12" />
-                                    <img src="img/tech-stack/css-3.svg" alt="CSS3" class="w-12 h-12" />
-                                    <img src="img/tech-stack/sass.svg" alt="SCSS" class="w-12 h-12" />
-                                    <img src="img/tech-stack/tailwindcss-icon.svg" alt="Tailwind CSS" class="w-12 h-12" />
-                                    <img src="img/tech-stack/bulma.svg" alt="Bulma" class="w-12 h-12" />
-                                    <img src="img/tech-stack/bootstrap.svg" alt="Bootstrap" class="w-12 h-12" />
-                                    <img src="img/tech-stack/javascript.svg" alt="JavaScript" class="w-12 h-12" />
+                                <div id="icons" class="flex flex-wrap w-full">
+                                    <img src="img/tech-stack/html-5.svg" alt="HTML5" class="w-12 h-12 m-2 sm:m-4" />
+                                    <img src="img/tech-stack/css-3.svg" alt="CSS3" class="w-12 h-12 m-2 sm:m-4" />
+                                    <img src="img/tech-stack/sass.svg" alt="SCSS" class="w-12 h-12 m-2 sm:m-4" />
+                                    <img src="img/tech-stack/tailwindcss-icon.svg" alt="Tailwind CSS" class="w-12 h-12 m-2 sm:m-4" />
+                                    <img src="img/tech-stack/bulma.svg" alt="Bulma" class="w-12 h-12 m-2 sm:m-4" />
+                                    <img src="img/tech-stack/javascript.svg" alt="JavaScript" class="w-12 h-12 m-2 sm:m-4" />
                                 </div>
                             </section>
                             <!-- #skills -->
 
-                            <section id="learning">
-                                <h1 class="text-xl font-medium mb-6">Learning</h1>
-                                <div id="icons" class="flex flex-col items-start justify-between px-4">
-                                    <img src="img/tech-stack/jquery.svg" alt="jQuery" class="w-24 h-auto" />
-                                </div>
-                            </section>
-                            <!-- #learning -->
+                            <div id="twitter-timeline">
+                                <h1 class="text-xl font-medium mb-6">Tweets</h1>
+                                <a class="twitter-timeline" href="https://twitter.com/theShounakDas" data-height="200" data-width="400" data-chrome="noheader nofooter noborders noscrollbar transparent"> Tweets by @theShounakDas </a>
+                            </div>
+                            <!-- #twitter-timeline -->
                         </div>
                         <!-- #skills-row -->
 
@@ -112,11 +111,8 @@
                             <h1 class="text-xl font-medium mb-2">Education</h1>
                             <ul class="text-bluegray-600 list-disc list-outside ml-6">
                                 <li>
-                                    <!--todo: B.Tech Computer Science Engineering <br />
-                                    SRM Institute of Science & Technology (KTR), Chennai <br />
-                                    Year of graduation - 2025 -->
                                     B.Tech Computer Science Engineering <br />
-                                    Year of graduation - 2025
+                                    <span class="italic ml-2 decoration-clone">SRM Institute of Science & Technology, KTR, Chennai (2021-2025)</span>
                                 </li>
                             </ul>
                         </section>
@@ -124,20 +120,28 @@
                     </section>
                     <!-- #about -->
 
+                    <!-- * PROJECTS -->
                     <section id="projects" class="tabcontent hidden">
+                        <h1 class="text-2xl font-bold p-8 leading-loose">
+                            Building something good...<br />
+                            Please come back later.<br />
+                            :)
+                        </h1>
                         <div id="projects-grid-wrapper" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 p-2 md:p-4 lg:p-8">
-                            <div id="projects-grid-card" class="bg-white border rounded-3xl shadow-md p-5">
+                            <!-- TODO: uncomment this chunk when everything is ready -->
+                            <!-- <div id="projects-grid-card" class="bg-white border rounded-3xl shadow-md p-5">
                                 <h1 id="project-title" class="text-xl font-medium mb-4">Project Title</h1>
                                 <div id="project-image-container" class="h-32 w-full mb-2 bg-gray-400"></div>
                                 <p id="project-description" class="text-sm text-bluegray-600 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto porro hic fugiat vitae consectetur atque labore distinctio alias architecto commodi.</p>
                                 <button id="project-link-btn" class="p-1 w-full bg-bluegray-900 text-brand rounded-full hover:bg-brand hover:text-bluegray-900 transition"><a href="">Visit</a></button>
-                            </div>
+                            </div> -->
                             <!-- #projects-grid-card -->
                         </div>
                         <!-- #projects-grid-wrapper -->
                     </section>
                     <!-- #projects -->
 
+                    <!-- * CONTACT -->
                     <section id="contact" class="tabcontent hidden p-4 lg:p-8">
                         <h1 id="contact-header" class="text-xl font-medium">Thanks for taking the time to reach out!</h1>
                         <div id="contact-wrapper" class="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -180,8 +184,8 @@
 
                                     <!-- Buttons -->
                                     <div id="form-buttons" class="flex w-full space-x-3">
-                                        <button type="submit" class="bg-brand w-full p-2 rounded-lg transition hover:bg-yellow-200">Send</button>
-                                        <button type="reset" class="bg-transparent text-bluegray-600 border border-bluegray-300 w-full p-2 rounded-lg transition hover:bg-bluegray-200">Reset</button>
+                                        <button type="submit" class="bg-brand w-full p-2 rounded-lg transition hover:bg-yellow-200 focus:ring focus:ring-brand focus:ring-offset-2">Send</button>
+                                        <button type="reset" class="bg-transparent text-bluegray-600 border border-bluegray-300 w-full p-2 rounded-lg transition hover:bg-bluegray-200 focus:ring focus:ring-bluegray-300 focus:ring-offset-2">Reset</button>
                                     </div>
                                 </form>
                             </div>
@@ -193,9 +197,16 @@
                 </main>
             </section>
             <!-- #section-right -->
+            <footer>
+                <p class="text-xs text-bluegray-600 text-center bg-bluegray-200 p-4 md:hidden">Made with 💛 and TailwindCSS | &copy;2021 Shounak Das</p>
+            </footer>
         </div>
         <!-- #card -->
+        <footer>
+            <p class="text-sm text-bluegray-600 text-center mt-4 px-4 hidden md:block">Made with 💛 and TailwindCSS | &copy;2021 Shounak Das</p>
+        </footer>
 
         <script src="script.js"></script>
+        <script src="https://platform.twitter.com/widgets.js" async></script>
     </body>
 </html>
