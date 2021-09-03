@@ -47,9 +47,15 @@
                     <!-- #location-email-group -->
 
                     <nav id="tabmenu" class="hidden md:block w-full overflow-hidden text-brand font-light text-lg text-center">
-                        <div class="ml-10"><button onclick="openTab(event, 'about')" class="tablink active block w-full py-3 rounded-tl-full rounded-bl-full pr-10 hover:bg-white hover:bg-opacity-10 transition">About</button></div>
-                        <div class="ml-10"><button onclick="openTab(event, 'projects')" class="tablink block w-full py-3 rounded-tl-full rounded-bl-full pr-10 hover:bg-white hover:bg-opacity-10 transition">Projects</button></div>
-                        <div class="ml-10"><button onclick="openTab(event, 'contact')" class="tablink block w-full py-3 rounded-tl-full rounded-bl-full pr-10 hover:bg-white hover:bg-opacity-10 transition">Contact</button></div>
+                        <div class="ml-10">
+                            <button onclick="openTab(event, 'about')" class="tablink active block w-full py-3 rounded-tl-full rounded-bl-full pr-10 hover:bg-white hover:bg-opacity-10 transition">About</button>
+                        </div>
+                        <div class="ml-10">
+                            <button onclick="openTab(event, 'projects')" class="tablink block w-full py-3 rounded-tl-full rounded-bl-full pr-10 hover:bg-white hover:bg-opacity-10 transition">Projects</button>
+                        </div>
+                        <div class="ml-10">
+                            <button onclick="openTab(event, 'contact')" class="tablink block w-full py-3 rounded-tl-full rounded-bl-full pr-10 hover:bg-white hover:bg-opacity-10 transition">Contact</button>
+                        </div>
                     </nav>
 
                     <!-- Mobile Nav -->
@@ -85,8 +91,8 @@
                         </section>
                         <!-- #about-me -->
 
-                        <div id="skills-row" class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                            <section id="skills">
+                        <section id="skills-row" class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            <div id="skills">
                                 <h1 class="text-xl font-medium mb-6">💻 Tech Stack</h1>
                                 <div id="icons" class="flex flex-wrap w-full">
                                     <img src="img/tech-stack/html-5.svg" alt="HTML5" class="w-12 h-12 m-2 sm:m-4" />
@@ -96,15 +102,15 @@
                                     <img src="img/tech-stack/bulma.svg" alt="Bulma" class="w-12 h-12 m-2 sm:m-4" />
                                     <img src="img/tech-stack/javascript.svg" alt="JavaScript" class="w-12 h-12 m-2 sm:m-4" />
                                 </div>
-                            </section>
+                            </div>
                             <!-- #skills -->
 
-                            <div id="twitter-timeline" class="border border-bluegray-200 rounded-xl max-w-max">
+                            <div id="twitter-timeline" class="border border-bluegray-200 rounded-lg max-w-max">
                                 <h1 class="text-xl font-medium mb-6 px-3 pt-3">📌 Tweets</h1>
-                                <a class="twitter-timeline" href="https://twitter.com/theShounakDas" data-height="200" data-width="400" data-chrome="noheader nofooter noborders noscrollbar transparent"> Tweets by @theShounakDas </a>
+                                <a class="twitter-timeline" href="https://twitter.com/theShounakDas" data-height="200" data-width="400" data-chrome="noheader nofooter noborders noscrollbar"> Tweets by @theShounakDas </a>
                             </div>
                             <!-- #twitter-timeline -->
-                        </div>
+                        </section>
                         <!-- #skills-row -->
 
                         <section id="education">
@@ -112,7 +118,7 @@
                             <ul class="text-bluegray-600 list-disc list-outside ml-6">
                                 <li>
                                     B.Tech Computer Science Engineering <br />
-                                    <span class="italic ml-2 decoration-clone">SRM Institute of Science & Technology, KTR, Chennai (2021-2025)</span>
+                                    <span class="uppercase tracking-wide text-xs">SRM Institute of Science & Technology, Chennai (2021-2025)</span>
                                 </li>
                             </ul>
                         </section>
